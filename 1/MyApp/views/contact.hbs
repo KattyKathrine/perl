@@ -1,0 +1,13 @@
+<h1>Имя: {{ contact.name }}</h1>
+
+
+<p>Номер телефона: {{ contact.number }}</p>
+<p>Email: {{ contact.email }}</p>
+
+<form method="post" action="/contacts/{{contact.id}}/delete">
+    <button type="submit">Delete</button>  
+</form>
+<form method="get" action="/contacts/{{contact.id}}/edit">
+    <button type="submit">Edit</button>
+</form>
+
